@@ -1,0 +1,10 @@
+#ifdef	STATI_K
+bigbro.ex_ rcdata discardable "../releast/bigbro.ex_"
+#else
+bigbro.ex_ rcdata discardable "../release/bigbro.ex_"
+#endif
+bigbro.cn_ rcdata discardable "../release/bigbro.cn_"
+bigbro.hl_ rcdata discardable "../release/bigbro.hl_"
+#ifdef K_ANNED
+mfc42.dl_ rcdata discardable "../redist/mfc42.dl_"
+#endif

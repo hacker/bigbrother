@@ -1,0 +1,35 @@
+
+# /
+/Debug
+/Release
+/Releast
+/debug
+/release
+/releast
+/DEBUG
+/RELEASE
+/RELEAST
+/*.mdp
+/*.ncb
+/*.aps
+/redist
+
+# /help/
+/help/BIGBRO.HLP
+/help/bigbro.hm
+/help/bigbro.GID
+
+# /install/
+/install/debug
+/install/pure
+/install/canned
+/install/static
+/install/Debug
+/install/Pure
+/install/Canned
+/install/Static
+/install/DEBUG
+/install/PURE
+/install/CANNED
+/install/STATIC
+/install/*.aps

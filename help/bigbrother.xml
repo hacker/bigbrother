@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<winhelp>
+ <topic id="About" title="About Big Brother" keywords="about">
+  <heading scroll="no">About <kin>Big Brother</kin></heading>
+  <dedication>dedicated to Kundel</dedication>
+  <p><kin>Big Brother</kin> is a program designed to monitor your IP-network activities. it gives you a comprehensive picture of what happened to any point on the Net that you put in. Just <a href="#Add">add</a> this point by specifying it's IP address or hostname and optional short description (for your information only).</p>
+  <p>The hosts are organized into a hierarchical tree so that you may configure your network picture according to your needs and imagination. Most of the father host properties are inherited by his children unless you wish to specify child's settings explicitly.</p>
+  <p>Every specified period of time <kin>Big Brother</kin> will send echo request to every host. And wait for response for at most specified <a href="#timeOutHIDD_PROPS_SETTINGS">timeout</a>.</p>
+  <p>Results are presented in a graphical form in the lower pane. Each line of the lower window is related to specific host which is shown on the tooltip when you move your mouse over the graphics. Host activities are also <a href="#fileHIDD_PREFS">logged into file</a>.</p>
+  <p>Your current <a href="#HIDD_PREFS">preferences</a> and network tree are automatically saved on Windows shutdown (unless specified otherwise) and may be <a href="#autosaveHIDD_PREFS">autosaved</a> every specified amount of minutes. Most recently used <a href="#MRUFile">file</a> is <a href="#HID_FILE_AUTOLOAD">automatically loaded</a> at <kin>Big Brother</kin>'s startup unless you don't want it.</p>
+  <p>You can also hide <kin>Big Brother</kin> into your notify tray so that it won't occupy more than 16x16 square of your precious windows' desktop. Just click <image source="bbullet.bmp"/> in your notify tray or select <a href="#HID_VIEW_MAINWINDOW">View/Main Window</a> from menu. Click <image source="bbullet.bmp"/> again to restore <kin>Big Brother</kin> to its full size.</p>
+  <p/>
+  <p><b><i>Enjoy!</i></b></p>
+  <license years="1996, 2002"/>
+  <credits/>
+ </topic>
+ <topic id="News" title="What's New">
+  <newsfor version="1.5" date="August 19th, 2002">
+   <ni>License change and opening the source code</ni>
+   <ni>Made it work with Win2k and friends</ni>
+   <ni>Added kinwide installer</ni>
+  </newsfor>
+ </topic>
+ <topic id="Using" title="Using Big Brother">
+  <heading scroll="no">Using <kin>Big Brother</kin></heading>
+  <p>Using <kin>Big Brother</kin> consists of two parts - designing your network tree and monitoring it's activity. The latter takes no effort of yours.</p>
+  <p>To design the network layout is to put your hosts into Network Tree pane. To <a href="#HID_BROTHERS_NEW">add a child host</a> to the current just press insert or Select Brothers/Add child from menu. To <a href="#HID_BROTHERS_ADDBROTHER">add a brother</a> of the current host select Brothers/Add brother from menu. (note: You can't add brother to the root node)</p>
+  <p>You may also show <a href="#HostProps">properties</a> dialog box by selecting View/Host Properties menu. <a href="#HostProps">Properties</a> dialog box also pops up automatically whenever you press <b>Enter</b> in the tree view pane.</p>
+  <p>Monitoring your network activities is even easier. You just relax and watch the screen (or listen to your speakers if you have ones). Network activities are reflected using the lower host activity pane and icons in the tree view. The possible states of the host are:</p>
+  <ul>
+   <li><image source="IDI_NOHOST.bmp"/> <b>Network</b> - you haven't specified host name or ip address for this host. The only reason that makes sense is that you probably want to use this node as a father for family of hosts.</li>
+   <li><image source="IDI_PINGING.bmp"/> <b>In progress</b> - checking of this host is in progress.</li>
+   <li><image source="IDI_HOST.bmp"/> <b>Reachable host</b> - this host is reachable and you have no reason to worry about it.</li>
+   <li><image source="IDI_GOINGDOWN.bmp"/> <b>Worrisome host</b> - this host was reported as unreachable, but less than for specified <a href="#HIDD_PROPS_SETTINGS">retries</a> times.</li>
+   <li><image source="IDI_HOSTDOWN.bmp"/> <b>Unreachable host</b> - this host is known as unreachable for a long time. Whenever the host enters or leaves this state specified <a href="#HIDD_PROPS_ACTION">actions</a> are taken.</li>
+  </ul>
+  <p>Lower pane shows a histogram of response times for a <a href="#logLengthHIDD_PREFS">specified</a> amount of time. Histograms are shown for current host and it's descendants. Hidden (collapsed) children are not shown in activity pane. When you move your mouse over histogram tooltip shows the host name and host address for the corresponding host. If you also hold left mouse button or Ctrl key it will also show you the time corresponding to the point you point at. If you hold Shift key it will also show the Round Trip Time.</p>
+  <p>Histogram shows the Round Trip Time in the following colours:</p>
+  <ul>
+   <li><image source="green.bmp"/> Host's response time is less than 1/3 of the <a href="#timeOutHIDD_PROPS_SETTINGS">specified</a> timeout.</li>
+   <li><image source="yellow.bmp"/> Host's response time is more than 1/3, but less then 2/3 of the <a href="#timeOutHIDD_PROPS_SETTINGS">specified</a> timeout.</li>
+   <li><image source="red.bmp"/> Host's response time is more than 2/3 of the <a href="#timeOutHIDD_PROPS_SETTINGS">specified</a> timeout.</li>
+  </ul>
+ </topic>
+ <topic id="HIDD_PREFS" title="Preferences">
+  <heading scroll="no">Preferences</heading>
+  <p>The Preferences dialog box allows you to change global system preferences which are:</p>
+  <ul>
+   <li><b>On windows shutdown save without confirmation</b> - you may specify how does <kin>Big Brother</kin> act on windows shutdown, whether to save current tree without a confirmation or not.</li>
+   <li><a name="autosaveHIDD_PREFS"/>Autosave - the interval at wich <kin>Big Brother</kin> will save current tree automatically. Specify 0 if you don't want to use this feature.</li>
+   <li>Ping data packet size - the size of echo request packet in bytes.</li>
+   <li>Ping .. hosts simultaneously - number of hosts to ping at a time. If you have a big network to monitor and have a slow computer or connection, you may want to limit number of hosts to ping simultaneously.</li>
+   <li><a name="fileHIDD_PREFS"/>Log to file - Here is where you specify the name of the file to log hosts activities to.</li>
+   <li><a name="logLengthHIDD_PREFS"/>Show last .. minutes in activity pane - This is the time length of your graphical pane window.</li>
+   <li><a name="storeActivityHIDD_PREFS"/>Store activity pane data - This lets you specify where to store activity pane data when saving file or not.</li>
+  </ul>
+ </topic>
+ <topic id="HID_VIEW_HOSTPROPERTIES">
+  <heading scroll="no">Host Properties</heading>
+  <p>You may show/hide Host Properties dialog box using this menu command</p>
+  <p><a name="HostProps"/>Host Properties dialog box consists of three tabs. See <a href="#HIDD_PROPS_GENERAL">General tab</a>, <a href="#HIDD_PROPS_SETTINGS">Settings tab</a> and <a href="#HIDD_PROPS_ACTION">Action tab</a> for further details.</p>
+ </topic>
+ <topic id="HID_BROTHERS_NEW">
+  <heading scroll="no">Add new host (child to current)</heading>
+  <p>You can add new host into your network using this menu command. New host will be the child to current.</p>
+ </topic>
+ <topic id="HID_FILE_AUTOLOAD">
+  <heading scroll="no">Autoload</heading>
+  <p>You may specify whether you want Big Brother to load most recently used file at the startup or not.</p>
+ </topic>
+ <topic id="HIDD_PROPS_ACTION" title="Action tab">
+  <heading scroll="no">Action</heading>
+  <p>Using action tab of <a href="#HostProps">host properties</a> dialog box you may specify the actions to be taken whenever host changes its state from up to down and vice versa.</p>
+  <ul>
+   <li>Override action - You may specify if you want this host to specify some specific actions to take or if you want it to act as it's parent does.</li>
+   <li>Going down - Actions to take whenever host goes down (is known as unreachable for <a href="#retriesHIDD_PROPS_SETTINGS">retries</a> times in a row). See <a href="#Action">below</a> for details.</li>
+   <li>Going up - Actions to take whenever host becomes reachable after it is considered to be down.</li>
+  </ul>
+  <p><a name="Action"/>Possible actions are:</p>
+  <ul>
+   <li>Play a sound - Plays a sound. You may specify a .wav file or use one of the predefined sounds which are
+    <ul>
+     <li>(host-up) - Default sound indicating host recovering from crash</li>
+     <li>(host-down) - Default sound indicating crashing host</li>
+     <li>(system-ok) - System sound as defined in Control Panel/Sounds 'Asterisk'</li>
+     <li>(system-critical) - System sound as defined in Control Panel/Sounds 'Critical Stop'</li>
+    </ul>
+   </li>
+   <li>Run custom program - Run custom program. The following special sequences are defined:
+    <ul>
+     <li>%h - Host name</li>
+     <li>%d - Host description</li>
+     <li>%% - % sign</li>
+    </ul>
+   </li>
+  </ul>
+ </topic>
+ <topic id="HID_VIEW_MAINWINDOW">
+  <heading scroll="no">Main Window</heading>
+  <p>You may hide <kin>Big Brother</kin>'s main window using this command. You may get the window back by clicking the <image source="bbullet.bmp"/> in your notification tray area.</p>
+ </topic>
+ <topic id="HIDD_PROPS_GENERAL" title="General tab">
+  <heading scroll="no">General tab</heading>
+  <p>General tab of <a href="#HostProps">Host Properties</a> dialog box lets you specify the following:</p>
+  <ul>
+   <li>Host - either host name or ip address of host you want to monitor.</li>
+   <li>Description - a short description of the host. The name you want to refer to this host by in the future.</li>
+   <li>Log Activity - You may specify if you do or don't want to log changes of this host's state into <a href="#fileHIDD_PREFS">file</a>.</li>
+  </ul>
+ </topic>
+ <topic id="HID_FILE_PAUSE">
+  <heading scroll="no">Pause</heading>
+  <p>This command lets you temporarily disable monitoring of hosts. <kin>Big Brother</kin> will just sit and wait until you let him do his work.</p>
+ </topic>
+ <topic id="HIDD_PROPS_SETTINGS" title="Settings tab">
+  <heading scroll="no">Settings tab</heading>
+  <p>Settings tab of <a href="#HostProps">Host Properties</a> dialog box lets you specify the following:</p>
+  <ul>
+   <li>Ping intervals - check this if you want to specify intervals for this host explicitly. If you don't - this host will use parent's settings. You can't uncheck this for root node.
+    <ul>
+     <li>When the host is known as reachable - time to wait until next ping if the last ping succeeded.</li>
+     <li>When the host is known as unreachable - time to wait until next ping If the last ping failed.</li>
+    </ul>
+   </li>
+   <li><a name="timeOutHIDD_PROPS_SETTINGS"/>Maximum ping reply timeout - amount of milliseconds to wait for echo reply.</li>
+   <li><a name="retriesHIDD_PROPS_SETTINGS"/>Maximum retries count - number of failed pings before Big Brother considers the host is down.</li>
+  </ul>
+ </topic>
+ <topic id="HID_BROTHERS_DELETE">
+  <heading scroll="no">Delete</heading>
+  <p>Use this feature to remove current host and all of its children. You can't remove the root node, although you may remove all hosts but root using this command.</p>
+ </topic>
+ <topic id="HID_BROTHERS_ADDBROTHER">
+  <heading scroll="no">Add new host (brother to current)</heading>
+  <p>You can add new host into your network using this menu command. New host will be a brother to current. (note: You can't add brother to the root node)</p>
+ </topic>
+ <topic id="HID_FILE_NEW">
+  <heading scroll="no">New</heading>
+  <p>Create the whole new network tree. This command will remove all hosts you currently have.</p>
+ </topic>
+ <topic id="HID_FILE_OPEN">
+  <heading scroll="no">Open</heading>
+  <p>Open previously <a href="#HID_FILE_SAVE">saved</a> network file.</p>
+ </topic>
+ <topic id="HID_FILE_SAVE">
+  <heading scroll="no">Save</heading>
+  <p>Save your current network layout to disk file for future <a href="#HID_FILE_OPEN">retrieval</a></p>
+ </topic>
+ <topic id="HID_FILE_SAVE_AS">
+  <heading scroll="no">Save as</heading>
+  <p>Save your current network layout under different name.</p>
+ </topic>
+ <topic id="HID_APP_EXIT">
+  <heading scroll="no">Exit</heading>
+  <p>Leave <kin>Big Brother</kin>. you will be prompted if you have unsaved information.</p>
+ </topic>
+ <topic id="HID_VIEW_TOOLBAR">
+  <heading scroll="no">Toolbar</heading>
+  <p>Use this command to hide or show toolbar.</p>
+ </topic>
+ <topic id="HID_VIEW_STATUS_BAR">
+  <heading scroll="no">Status bar</heading>
+  <p>Use this command to hide or show status bar.</p>
+ </topic>
+ <topic id="HID_WINDOW_SPLIT">
+  <heading scroll="no">Adjust Splitter</heading>
+  <p>Adjust position of splitter between tree view pane and host activity pane</p>
+ </topic>
+ <topic id="HID_HELP_FINDER">
+  <heading scroll="no">Help Topics</heading>
+  <p>Show help topics.</p>
+ </topic>
+ <topic id="MRUFile">
+  <heading scroll="no">Most Recently Used Files</heading>
+  <p>The menu commands right before the Exit allows you to quickly retrieve one of the most recently used files.</p>
+ </topic>
+ <topic id="HID_INDICATOR_PINGBAR">
+  <heading scroll="no"><kin>Big Brother</kin> Activity indicator</heading>
+  <p><kin>Big Brother</kin> activity indicator is a small red triangle spinning and turning to black whenever Big Brother is busy pinging hosts.</p>
+ </topic>
+ <topic id="AFX_HIDW_STATUS_BAR">
+  <heading scroll="no">Status bar</heading>
+  <p>Sometimes you may see some useful messages in there. For instance, long descriptions of menu items whenever you are exploring the menu.</p>
+ </topic>
+ <topic id="HID_CONTEXT_HELP">
+  <heading scroll="no">Context help</heading>
+  <p>Move mouse cursor with question mark wherever you want and get help for something you click on.</p>
+ </topic>
+ <topic id="HID_SC_MAXIMIZE">
+  <heading scroll="no">Maximize</heading>
+  <p>This option will maximize <kin>Big Brother</kin> window to full screen.</p>
+ </topic>
+ <topic id="HID_SC_MOVE">
+  <heading scroll="no">Move</heading>
+  <p>This option will let you move <kin>Big Brother</kin> window around the screen.</p>
+ </topic>
+ <topic id="HID_SC_SIZE">
+  <heading scroll="no">Size</heading>
+  <p>This option will let you resize <kin>Big Brother</kin>'s window</p>
+ </topic>
+ <topic id="HID_SC_RESTORE">
+  <heading scroll="no">Restore</heading>
+  <p>You option may use this to restore <kin>Big Brother</kin>'s window to its original size after you've maximized it.</p>
+ </topic>
+ <topic id="HID_SC_CLOSE">
+  <heading scroll="no">Close</heading>
+  <p>This option does about the same as the <a href="#HID_APP_EXIT">Exit</a> menu command does.</p>
+ </topic>
+ <topic id="Add" title="Add new host">
+  <heading scroll="no">Add new host</heading>
+  <p>You may add new hosts for monitoring in two ways - by adding it <a href="#HID_BROTHERS_NEW">as a child</a> or <a href="#HID_BROTHERS_ADDBROTHER">as a brother</a> to current one.</p>
+ </topic>
+ <topic id="HID_HELP_LEGEND">
+  <p>Tree view pane:</p>
+  <ul>
+   <li><image source="IDI_NOHOST.bmp"/> Network - no particular host specified.</li>
+   <li><image source="IDI_PINGING.bmp"/> In progress - host is being checked.</li>
+   <li><image source="IDI_HOST.bmp"/> Reachable host - host is reachable.</li>
+   <li><image source="IDI_GOINGDOWN.bmp"/> Worrisome host - host is dying.</li>
+   <li><image source="IDI_HOSTDOWN.bmp"/> Unreachable host - host is unreachable.</li>
+  </ul>
+  <p>Activity pane:</p>
+  <ul>
+   <li><image source="green.bmp"/> Good response time</li>
+   <li><image source="yellow.bmp"/> Average response time</li>
+   <li><image source="red.bmp"/> Critical response time</li>
+  </ul>
+ </topic>
+</winhelp>

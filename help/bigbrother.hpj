@@ -1,0 +1,33 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+CONTENTS=About
+TITLE=Big Brother
+CNT=bigbro.cnt
+HLP=BIGBRO.HLP
+
+[FILES]
+bigbrother.rtf
+
+[ALIAS]
+AFX_HIDW_DOCKBAR_TOP=Using
+HID_APP_ABOUT=About
+HID_FILE_MRU_FILE1=MRUFile
+HID_FILE_MRU_FILE2=MRUFile
+HID_FILE_MRU_FILE3=MRUFile
+HID_FILE_MRU_FILE4=MRUFile
+HID_FILE_PREFERENCES=HIDD_PREFS
+HID_HT_CAPTION=Using
+HID_HT_MAXBUTTON=HID_SC_MAXIMIZE
+HID_HT_MINBUTTON=Using
+HIDD_ABOUTBOX=About
+HIDR_MAINFRAME=Using
+
+[MAP]
+#include bigbro.hm
+
+[WINDOWS]
+Standard="",(208,13,513,954),20740,(r14876671),(r12632256),f2

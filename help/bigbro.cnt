@@ -1,0 +1,29 @@
+:Base BigBro.hlp>Standard
+:Title Big Brother
+1 Big Brother
+2 About Big Brother=About
+2 What's New=News
+2 Using Big Brother=Using
+1 Menus
+2 File
+3 New=HID_FILE_NEW
+3 Open=HID_FILE_OPEN
+3 Save=HID_FILE_SAVE
+3 Save as=HID_FILE_SAVE_AS
+3 Autoload=HID_FILE_AUTOLOAD
+3 Preferences=HID_FILE_PREFERENCES
+3 Pause=HID_FILE_PAUSE
+3 Exit=HID_APP_EXIT
+2 Brothers
+3 Add child=HID_BROTHERS_NEW
+3 Add brother=HID_BROTHERS_ADDBROTHER
+3 Delete=HID_BROTHERS_DELETE
+2 View
+3 Toolbar=HID_VIEW_TOOLBAR
+3 Status bar=HID_VIEW_STATUS_BAR
+3 Adjust splitter=HID_WINDOW_SPLIT
+3 Main Window=HID_VIEW_MAINWINDOW
+3 Host Properties=HID_VIEW_HOSTPROPERTIES
+2 Help
+3 Help Topics=HID_HELP_FINDER
+3 About BigBrother=HID_APP_ABOUT

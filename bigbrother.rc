@@ -1,0 +1,729 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\BigBrother.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\bigbrother.ico"
+IDR_BIGBROTYPE          ICON    DISCARDABLE     "res\\BigBrotherDoc.ico"
+IDI_NOHOST              ICON    DISCARDABLE     "res\\nohost.ico"
+IDI_PENDING             ICON    DISCARDABLE     "res\\pending.ico"
+IDI_HOST                ICON    DISCARDABLE     "res\\host.ico"
+IDI_PINGING             ICON    DISCARDABLE     "res\\pinging.ico"
+IDI_GOINGDOWN           ICON    DISCARDABLE     "res\\goingdown.ico"
+IDI_HOSTDOWN            ICON    DISCARDABLE     "res\\hostdown.ico"
+IDI_PREPLAY             ICON    DISCARDABLE     "shared-data/play-icon.ico"
+IDI_BROWSESOUND         ICON    DISCARDABLE     "shared-data/browse-icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\maintoolbar.bmp"
+IDR_JUNKTOOLBAR         BITMAP  DISCARDABLE     "res\\junktoolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_BROTHERS_NEW
+    BUTTON      ID_BROTHERS_ADDBROTHER
+    BUTTON      ID_BROTHERS_DELETE
+    SEPARATOR
+    BUTTON      ID_VIEW_HOSTPROPERTIES
+    BUTTON      ID_FILE_PAUSE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    BUTTON      ID_HELP_LEGEND
+END
+
+IDR_JUNKTOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Autoload",                   ID_FILE_AUTOLOAD
+        MENUITEM "Preferences\tCtrl+P",         ID_FILE_PREFERENCES
+        MENUITEM "&Pause",                      ID_FILE_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Brother"
+    BEGIN
+        MENUITEM "Add &child",                  ID_BROTHERS_NEW
+        MENUITEM "Add &brother",                ID_BROTHERS_ADDBROTHER
+        MENUITEM "&Delete",                     ID_BROTHERS_DELETE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Adjust s&plitter",            ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Main Window",                ID_VIEW_MAINWINDOW
+        MENUITEM "&Host Properties",            ID_VIEW_HOSTPROPERTIES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM "&Legend",                     ID_HELP_LEGEND
+        MENUITEM SEPARATOR
+        MENUITEM "&About BigBrother...",        ID_APP_ABOUT
+    END
+END
+
+IDM_POPUPS MENU DISCARDABLE 
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "&Show main window",           ID_VIEW_MAINWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM "&About Big Brother",          ID_APP_ABOUT
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Junk"
+    BEGIN
+        MENUITEM "PingBar",                     ID_INDICATOR_PINGBAR
+        POPUP "&Edit"
+        BEGIN
+            MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+            MENUITEM SEPARATOR
+            MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+            MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+            MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PREFERENCES,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_BROTHERS_DELETE,     VIRTKEY, NOINVERT
+    VK_DELETE,      ID_BROTHERS_DELETE,     VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_BROTHERS_NEW,        VIRTKEY, NOINVERT
+    "X",            ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+END
+
+IDR_JUNKACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Big Brother"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,16,18,20
+    LTEXT           "Big Brother, Version 1.5",IDC_STATIC,48,16,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1996,2002 Klever Group",IDC_STATIC,48,31,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    PUSHBUTTON      "http://www.klever.net/",IDC_KLEVERNET,65,53,86,14
+END
+
+IDD_PROPS_SETTINGS DIALOG DISCARDABLE  0, 0, 220, 90
+STYLE DS_3DLOOK | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,206,45,BS_NOTIFY
+    CONTROL         "Ping &Intervals",IDC_OVERRIDE_INTERVALS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,7,55,10
+    LTEXT           "When the host is known as reach&able:",IDC_STATIC,14,18,
+                    122,8
+    EDITTEXT        IDC_PINGINTERVAL_GOOD,165,16,40,13,ES_AUTOHSCROLL
+    LTEXT           "When the host is known as &unreachable:",IDC_STATIC,14,
+                    32,130,8
+    EDITTEXT        IDC_PINGINTERVAL_BAD,165,30,40,13,ES_AUTOHSCROLL
+    CONTROL         "Maximum ping reply &timeout:",IDC_OVERRIDE_TIMEOUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,56,104,10
+    EDITTEXT        IDC_PINGTIMEOUT,165,55,40,13,ES_AUTOHSCROLL
+    CONTROL         "Maimum &retries count:",IDC_OVERRIDE_RETRIES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,70,85,10
+    EDITTEXT        IDC_RETRIES,165,70,40,13,ES_AUTOHSCROLL
+END
+
+IDD_PROPS_GENERAL DIALOG DISCARDABLE  0, 0, 221, 90
+STYLE DS_3DLOOK | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Host:",IDC_STATIC,7,7,18,8
+    EDITTEXT        IDC_HOST,7,17,205,13,ES_LOWERCASE | ES_AUTOHSCROLL
+    LTEXT           "&Description:",IDC_STATIC,7,33,38,8
+    EDITTEXT        IDC_DESC,7,44,205,13,ES_AUTOHSCROLL
+    CONTROL         "&Log host's activity",IDC_LOG_ACTIVITY,"Button",
+                    BS_AUTO3STATE | BS_PUSHLIKE | WS_TABSTOP,7,63,205,14
+END
+
+IDD_PROPS_ACTION DIALOG DISCARDABLE  0, 0, 220, 90
+STYLE DS_3DLOOK | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Action"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Override Action",IDC_OVERRIDE_ACTION,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,7,208,11
+    GROUPBOX        "Going down",IDC_STATIC,7,20,102,63
+    CONTROL         "&Play a sound:",IDC_PLAYASOUND_DOWN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,29,59,10
+    COMBOBOX        IDC_SOUND_DOWN,13,40,91,43,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BROWSE_SOUND_DOWN,78,29,12,10,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY
+    PUSHBUTTON      "",IDC_PREVIEW_SOUND_DOWN,92,29,12,10,BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_NOTIFY
+    CONTROL         "&Run custom program:",IDC_CUSTOM_DOWN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,55,83,10
+    EDITTEXT        IDC_PROGRAM_DOWN,13,66,91,12,ES_AUTOHSCROLL
+    GROUPBOX        "Going up",IDC_STATIC,111,20,102,63
+    CONTROL         "P&lay a sound:",IDC_PLAYASOUND_UP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,29,59,10
+    COMBOBOX        IDC_SOUND_UP,117,40,91,43,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BROWSE_SOUND_UP,182,29,12,10,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY
+    PUSHBUTTON      "",IDC_PREVIEW_SOUND_UP,196,29,12,10,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY
+    CONTROL         "R&un custom program:",IDC_CUSTOM_UP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,55,83,10
+    EDITTEXT        IDC_PROGRAM_UP,117,66,91,12,ES_AUTOHSCROLL
+END
+
+IDD_PREFS DIALOGEX 0, 0, 191, 156
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Preferences"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Save options",IDC_STATIC,7,7,121,41
+    CONTROL         "On windows shut&down save without confirmation.",
+                    IDC_SAVEONSHUTDOWN,"Button",BS_AUTOCHECKBOX | BS_CENTER | 
+                    BS_MULTILINE | BS_NOTIFY | WS_TABSTOP,13,15,110,16
+    LTEXT           "&Autosave every",IDC_STATIC,13,35,50,8
+    EDITTEXT        IDC_AUTOSAVEMINS,67,33,27,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_AUTOSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,82,33,11,12
+    LTEXT           "minutes",IDC_STATIC,99,35,25,8
+    GROUPBOX        "ICMP options",IDC_STATIC,7,49,177,37
+    LTEXT           "&Ping data packet size:",IDC_STATIC,13,59,71,8,
+                    SS_NOTIFY
+    EDITTEXT        IDC_PINGSIZE,87,57,35,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_DATASIZESPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,106,57,11,12
+    LTEXT           "bytes",IDC_STATIC,125,59,18,8
+    LTEXT           "&hosts simultaneously",IDC_STATIC,63,72,65,8
+    EDITTEXT        IDC_MAXTHREADS,33,70,27,12,ES_AUTOHSCROLL
+    CONTROL         "Spin3",IDC_THREADSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,50,70,10,12
+    LTEXT           "Ping ",IDC_STATIC,13,72,17,8
+    GROUPBOX        "Watch options",IDC_STATIC,7,88,177,61
+    LTEXT           "Log to &file:",IDC_STATIC,13,96,34,8
+    EDITTEXT        IDC_LOGFILE,13,106,150,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE,166,106,14,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY
+    LTEXT           "Show &last ",IDC_STATIC,13,122,34,8
+    EDITTEXT        IDC_LOGMINS,47,120,27,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_LOGMINSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,64,120,10,12
+    LTEXT           "minutes in activity pane",IDC_STATIC,79,122,74,8,
+                    SS_NOTIFY
+    DEFPUSHBUTTON   "OK",IDOK,134,14,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,31,50,14
+    CONTROL         "&Store recent activity pane data",IDC_STOREACTIVITY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,134,113,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,0
+ PRODUCTVERSION 1,5,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Klever Group (http://www.klever.net/)\0"
+            VALUE "FileDescription", "Big Brother, network monitoring tool\0"
+            VALUE "FileVersion", "1, 5, 0, 0\0"
+            VALUE "InternalName", "BIGBROTHER\0"
+            VALUE "LegalCopyright", "Copyright © 1996, 2002 Klever Group (http://www.klever.net/)\0"
+	    VALUE "LegalTrademarks", "Klever Group (http://www.klever.net/)\0"
+            VALUE "OriginalFilename", "BIGBRO.EXE\0"
+            VALUE "ProductName", "Big Brother\0"
+            VALUE "ProductVersion", "1, 5, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_PROPS_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PROPS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PROPS_ACTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+        HORZGUIDE, 20
+    END
+
+    IDD_PREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPS_ACTION DLGINIT
+BEGIN
+    IDC_SOUND_DOWN, 0x403, 10, 0
+0x6828, 0x736f, 0x2d74, 0x7075, 0x0029, 
+    IDC_SOUND_DOWN, 0x403, 12, 0
+0x6828, 0x736f, 0x2d74, 0x6f64, 0x6e77, 0x0029, 
+    IDC_SOUND_DOWN, 0x403, 12, 0
+0x7328, 0x7379, 0x6574, 0x2d6d, 0x6b6f, 0x0029, 
+    IDC_SOUND_DOWN, 0x403, 18, 0
+0x7328, 0x7379, 0x6574, 0x2d6d, 0x7263, 0x7469, 0x6369, 0x6c61, 0x0029, 
+
+    IDC_SOUND_UP, 0x403, 10, 0
+0x6828, 0x736f, 0x2d74, 0x7075, 0x0029, 
+    IDC_SOUND_UP, 0x403, 12, 0
+0x6828, 0x736f, 0x2d74, 0x6f64, 0x6e77, 0x0029, 
+    IDC_SOUND_UP, 0x403, 12, 0
+0x7328, 0x7379, 0x6574, 0x2d6d, 0x6b6f, 0x0029, 
+    IDC_SOUND_UP, 0x403, 18, 0
+0x7328, 0x7379, 0x6574, 0x2d6d, 0x7263, 0x7469, 0x6369, 0x6c61, 0x0029, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_PINGBAR             AVI     DISCARDABLE     "res\\3angle.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDW_HOST_UP             WAVE    DISCARDABLE     "res\\host-up.wav"
+IDW_HOST_DOWN           WAVE    DISCARDABLE     "res\\host-down.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_PROPS_TITLE         "Properties"
+    IDS_LOG_DOLOG           "&Log host activity"
+    IDS_LOG_DONTLOG         "Don't &Log host activity"
+    IDS_LOG_ASKBIGBROTHER   "&Log if parent does"
+    IDS_NODESC              "..no description.."
+    IDS_PS_FAILEDTORESOLVE  "Failed to resolve host"
+    IDS_PS_UNABLETOICMP     "Failed to request ICMP service"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Big Brother\n\nBigBro\nBig Brother Files (*.bro)\n.BRO\nBigBrother.Document\nBigBro Document"
+    IDS_PS_UNKNOWNERROR     "Unkown error %lu"
+    IDS_REGISTRYKEY         "Klever Group, Inc."
+    IDS_AVIEW_NOTIP         "Host(s) activity"
+    IDS_AVIEW_SHORTTIP      "%s (%s)"
+    IDS_AVIEW_TIP_TIMEFORMAT "%c"
+    IDS_AVIEW_TIP_UNPINGED  "no timing information"
+    IDS_AVIEW_TIP_UNREACHABLE "not reached"
+    IDS_AVIEW_TIP_RTTREPORT "RTT = %lu"
+    IDS_ROOTNODENAME        "Global Settings"
+    IDS_WAVFILTER           "Wave files (*.wav)|*.wav|All files (*.*)|*.*|"
+    IDS_ACTION_HOST_UP      "(host-up)"
+    IDS_ACTION_HOST_DOWN    "(host-down)"
+    IDS_LOGFILTER           "Log files (*.log)|*.log|All files (*.*)|*.*|"
+    IDS_LOG_HOSTUP          "%s (%s) has changed state to up"
+    IDS_LOG_HOSTDOWN        "%s (%s) has changed state to down"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "BigBrother"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Adjust splitter position\nSplitter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BROTHERS_NEW         "Add new host to monitor. Child to current\nNew Child"
+    ID_VIEW_MAINWINDOW      "Show/hide main window\nHide/Show window"
+    ID_INDICATOR_PINGBAR    " "
+    ID_BROTHERS_ADDBROTHER  "Add new host to monitor. Brother to current\nNew brother"
+    ID_BROTHERS_DELETE      "Remove current host and subtree\nDelete"
+    ID_FILE_AUTOLOAD        "Automatically load most recently used file on startup\nAutoload"
+    ID_FILE_PREFERENCES     "Monitoring options\nPreferences"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PS_INTERNALERROR    "Internal error. Please report to Klever"
+    IDS_PS_NETUNREACHABLE   "Destination network is unreachable"
+    IDS_PS_HOSTUNREACHABLE  "Destination host is unreachable"
+    IDS_PS_PROTUNREACHABLE  "Destination protocol is unreachable"
+    IDS_PS_PORTUNREACHABLE  "Destination port is unreachable"
+    IDS_PS_NORESOURCES      "No resources"
+    IDS_PS_HWERROR          "Hardware error"
+    IDS_PS_BIGPACKET        "Packet size is too big"
+    IDS_PS_TIMEOUT          "Request timed out"
+    IDS_PS_BADROUTE         "Bad route"
+    IDS_PS_TTLEXPTRANSIT    "TTL expired in transition"
+    IDS_PS_TTLEXPREASM      "TTL Expired during reassembling"
+    IDS_PS_IPARAMP          "IP parameter problem"
+    IDS_PS_SOURCEQUENCH     "Source quench received"
+    IDS_PS_BIGOPTION        "Option is too big"
+    IDS_PS_BADDEST          "Bad destination"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOG_DATEFORMAT      "%a, %d %b %Y %H:%M:%S %z"
+    IDS_LOGFILE_SELECT      "Log To"
+    IDS_SOUND_SELECT        "Select Sound"
+    IDS_LOG_LOADFILE        "'%s' file loaded"
+    IDS_ACTION_SYSTEM_OK    "(system-ok)"
+    IDS_ACTION_SYSTEM_CRITICAL "(system-critical)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_PAUSE           "Temporarily suspend monitoring\nPause"
+    ID_VIEW_HOSTPROPERTIES  "Show/hide host properties window\nHost Properties"
+    ID_HELP_LEGEND          "Shows The Legend\nLegend"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\bigbrother.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

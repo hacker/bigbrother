@@ -1,0 +1,295 @@
+{\rtf1\ansi
+@{\footnote
+THIS FILE WAS AUTOMATICALLY GENERATED FROM XML DOCUMENT.
+DO NOT MODIFY THIS FILE DIRECTLY. EDIT XML DOCUMENT INSTEAD
+}
+{\fonttbl{\f0\froman Times New Roman;}{\f1\fswiss Arial;}{\f3\froman Symbol;}}{\colortbl;
+   \red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+   \red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+   \red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+   \red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+  
+\pard\plain\keepn
+#{\footnote About}
+${\footnote About Big Brother}
+K{\footnote about}
+{ \f1\fs18\b\sb120 About {\b Big Brother}}
+\par\sa120\sb120\qr\f1\fs16 dedicated to Kundel
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 {\b Big Brother} is a program designed to monitor your IP-network activities. it gives you a comprehensive picture of what happened to any point on the Net that you put in. Just {\uldb add}{\v Add} this point by specifying it's IP address or hostname and optional short description (for your information only).
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 The hosts are organized into a hierarchical tree so that you may configure your network picture according to your needs and imagination. Most of the father host properties are inherited by his children unless you wish to specify child's settings explicitly.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Every specified period of time {\b Big Brother} will send echo request to every host. And wait for response for at most specified {\uldb timeout}{\v timeOutHIDD_PROPS_SETTINGS}.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Results are presented in a graphical form in the lower pane. Each line of the lower window is related to specific host which is shown on the tooltip when you move your mouse over the graphics. Host activities are also {\uldb logged into file}{\v fileHIDD_PREFS}.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Your current {\uldb preferences}{\v HIDD_PREFS} and network tree are automatically saved on Windows shutdown (unless specified otherwise) and may be {\uldb autosaved}{\v autosaveHIDD_PREFS} every specified amount of minutes. Most recently used {\uldb file}{\v MRUFile} is {\uldb automatically loaded}{\v HID_FILE_AUTOLOAD} at {\b Big Brother}'s startup unless you don't want it.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You can also hide {\b Big Brother} into your notify tray so that it won't occupy more than 16x16 square of your precious windows' desktop. Just click \{bmct bbullet.bmp\} in your notify tray or select {\uldb View/Main Window}{\v HID_VIEW_MAINWINDOW} from menu. Click \{bmct bbullet.bmp\} again to restore {\b Big Brother} to its full size.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 {\b {\i Enjoy!}}
+{
+\par\pard\plain\sb360\sa120 \f1\fs16 Copyright (c) 1996, 2002 {\uldb\cf0 Klever Group (http://www.klever.net/)}{\v %!ExecFile("http://www.klever.net/")}
+\par\qj\sb120\sa120Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+\par The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+\par \sa360 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}
+\par \sa0\sb120\ql \f1\fs16 Author: {\b\uldb\cf11 Michael Krelin ({\i hacker@klever.net})}{\v %!ExecFile("mailto:hacker@klever.net")}
+\par \sa0\sb0 Fan mail send to {\i\uldb gefilte@klever.net}{\v %!ExecFile("mailto:gefilte@klever.net")}
+\page
+
+\pard\plain
+#{\footnote News}
+${\footnote What's New}
+\par\pard\plain\f1\fs24\qc\cf2\b 1.5 - August 19th, 2002
+\par\pard\plain\fi0\li0\f1\fs18 \bullet  License change and opening the source code
+\par\pard\plain\fi0\li0\f1\fs18 \bullet  Made it work with Win2k and friends
+\par\pard\plain\fi0\li0\f1\fs18 \bullet  Added kinwide installer
+\page
+
+\pard\plain\keepn
+#{\footnote Using}
+${\footnote Using Big Brother}
+{ \f1\fs18\b\sb120 Using {\b Big Brother}}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Using {\b Big Brother} consists of two parts - designing your network tree and monitoring it's activity. The latter takes no effort of yours.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 To design the network layout is to put your hosts into Network Tree pane. To {\uldb add a child host}{\v HID_BROTHERS_NEW} to the current just press insert or Select Brothers/Add child from menu. To {\uldb add a brother}{\v HID_BROTHERS_ADDBROTHER} of the current host select Brothers/Add brother from menu. (note: You can't add brother to the root node)
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You may also show {\uldb properties}{\v HostProps} dialog box by selecting View/Host Properties menu. {\uldb Properties}{\v HostProps} dialog box also pops up automatically whenever you press {\b Enter} in the tree view pane.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Monitoring your network activities is even easier. You just relax and watch the screen (or listen to your speakers if you have ones). Network activities are reflected using the lower host activity pane and icons in the tree view. The possible states of the host are:\pard
+\par \fi0\li0 \bullet   \{bmct IDI_NOHOST.bmp\}{\b Network} - you haven't specified host name or ip address for this host. The only reason that makes sense is that you probably want to use this node as a father for family of hosts.
+\par \fi0\li0 \bullet   \{bmct IDI_PINGING.bmp\}{\b In progress} - checking of this host is in progress.
+\par \fi0\li0 \bullet   \{bmct IDI_HOST.bmp\}{\b Reachable host} - this host is reachable and you have no reason to worry about it.
+\par \fi0\li0 \bullet   \{bmct IDI_GOINGDOWN.bmp\}{\b Worrisome host} - this host was reported as unreachable, but less than for specified {\uldb retries}{\v HIDD_PROPS_SETTINGS} times.
+\par \fi0\li0 \bullet   \{bmct IDI_HOSTDOWN.bmp\}{\b Unreachable host} - this host is known as unreachable for a long time. Whenever the host enters or leaves this state specified {\uldb actions}{\v HIDD_PROPS_ACTION} are taken.\pard
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Lower pane shows a histogram of response times for a {\uldb specified}{\v logLengthHIDD_PREFS} amount of time. Histograms are shown for current host and it's descendants. Hidden (collapsed) children are not shown in activity pane. When you move your mouse over histogram tooltip shows the host name and host address for the corresponding host. If you also hold left mouse button or Ctrl key it will also show you the time corresponding to the point you point at. If you hold Shift key it will also show the Round Trip Time.
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Histogram shows the Round Trip Time in the following colours:\pard
+\par \fi0\li0 \bullet   \{bmct green.bmp\} Host's response time is less than 1/3 of the {\uldb specified}{\v timeOutHIDD_PROPS_SETTINGS} timeout.
+\par \fi0\li0 \bullet   \{bmct yellow.bmp\} Host's response time is more than 1/3, but less then 2/3 of the {\uldb specified}{\v timeOutHIDD_PROPS_SETTINGS} timeout.
+\par \fi0\li0 \bullet   \{bmct red.bmp\} Host's response time is more than 2/3 of the {\uldb specified}{\v timeOutHIDD_PROPS_SETTINGS} timeout.\pard
+\page
+
+\pard\plain\keepn
+#{\footnote HIDD_PREFS}
+${\footnote Preferences}
+{ \f1\fs18\b\sb120 Preferences}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 The Preferences dialog box allows you to change global system preferences which are:\pard
+\par \fi0\li0 \bullet   {\b On windows shutdown save without confirmation} - you may specify how does {\b Big Brother} act on windows shutdown, whether to save current tree without a confirmation or not.
+\par \fi0\li0 \bullet   {#{\footnote autosaveHIDD_PREFS}}Autosave - the interval at wich {\b Big Brother} will save current tree automatically. Specify 0 if you don't want to use this feature.
+\par \fi0\li0 \bullet   Ping data packet size - the size of echo request packet in bytes.
+\par \fi0\li0 \bullet   Ping .. hosts simultaneously - number of hosts to ping at a time. If you have a big network to monitor and have a slow computer or connection, you may want to limit number of hosts to ping simultaneously.
+\par \fi0\li0 \bullet   {#{\footnote fileHIDD_PREFS}}Log to file - Here is where you specify the name of the file to log hosts activities to.
+\par \fi0\li0 \bullet   {#{\footnote logLengthHIDD_PREFS}}Show last .. minutes in activity pane - This is the time length of your graphical pane window.
+\par \fi0\li0 \bullet   {#{\footnote storeActivityHIDD_PREFS}}Store activity pane data - This lets you specify where to store activity pane data when saving file or not.\pard
+\page
+
+\pard\plain\keepn
+#{\footnote HID_VIEW_HOSTPROPERTIES}
+{ \f1\fs18\b\sb120 Host Properties}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You may show/hide Host Properties dialog box using this menu command
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 {#{\footnote HostProps}}Host Properties dialog box consists of three tabs. See {\uldb General tab}{\v HIDD_PROPS_GENERAL}, {\uldb Settings tab}{\v HIDD_PROPS_SETTINGS} and {\uldb Action tab}{\v HIDD_PROPS_ACTION} for further details.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_BROTHERS_NEW}
+{ \f1\fs18\b\sb120 Add new host (child to current)}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You can add new host into your network using this menu command. New host will be the child to current.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_FILE_AUTOLOAD}
+{ \f1\fs18\b\sb120 Autoload}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You may specify whether you want Big Brother to load most recently used file at the startup or not.
+\page
+
+\pard\plain\keepn
+#{\footnote HIDD_PROPS_ACTION}
+${\footnote Action tab}
+{ \f1\fs18\b\sb120 Action}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Using action tab of {\uldb host properties}{\v HostProps} dialog box you may specify the actions to be taken whenever host changes its state from up to down and vice versa.\pard
+\par \fi0\li0 \bullet   Override action - You may specify if you want this host to specify some specific actions to take or if you want it to act as it's parent does.
+\par \fi0\li0 \bullet   Going down - Actions to take whenever host goes down (is known as unreachable for {\uldb retries}{\v retriesHIDD_PROPS_SETTINGS} times in a row). See {\uldb below}{\v Action} for details.
+\par \fi0\li0 \bullet   Going up - Actions to take whenever host becomes reachable after it is considered to be down.\pard
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 {#{\footnote Action}}Possible actions are:\pard
+\par \fi0\li0 \bullet   Play a sound - Plays a sound. You may specify a .wav file or use one of the predefined sounds which are
+    \pard
+\par \fi0\li0 \bullet   (host-up) - Default sound indicating host recovering from crash
+\par \fi0\li0 \bullet   (host-down) - Default sound indicating crashing host
+\par \fi0\li0 \bullet   (system-ok) - System sound as defined in Control Panel/Sounds 'Asterisk'
+\par \fi0\li0 \bullet   (system-critical) - System sound as defined in Control Panel/Sounds 'Critical Stop'\pard
+\par \fi0\li0 \bullet   Run custom program - Run custom program. The following special sequences are defined:
+    \pard
+\par \fi0\li0 \bullet   %h - Host name
+\par \fi0\li0 \bullet   %d - Host description
+\par \fi0\li0 \bullet   %% - % sign\pard\pard
+\page
+
+\pard\plain\keepn
+#{\footnote HID_VIEW_MAINWINDOW}
+{ \f1\fs18\b\sb120 Main Window}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You may hide {\b Big Brother}'s main window using this command. You may get the window back by clicking the \{bmct bbullet.bmp\} in your notification tray area.
+\page
+
+\pard\plain\keepn
+#{\footnote HIDD_PROPS_GENERAL}
+${\footnote General tab}
+{ \f1\fs18\b\sb120 General tab}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 General tab of {\uldb Host Properties}{\v HostProps} dialog box lets you specify the following:\pard
+\par \fi0\li0 \bullet   Host - either host name or ip address of host you want to monitor.
+\par \fi0\li0 \bullet   Description - a short description of the host. The name you want to refer to this host by in the future.
+\par \fi0\li0 \bullet   Log Activity - You may specify if you do or don't want to log changes of this host's state into {\uldb file}{\v fileHIDD_PREFS}.\pard
+\page
+
+\pard\plain\keepn
+#{\footnote HID_FILE_PAUSE}
+{ \f1\fs18\b\sb120 Pause}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 This command lets you temporarily disable monitoring of hosts. {\b Big Brother} will just sit and wait until you let him do his work.
+\page
+
+\pard\plain\keepn
+#{\footnote HIDD_PROPS_SETTINGS}
+${\footnote Settings tab}
+{ \f1\fs18\b\sb120 Settings tab}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Settings tab of {\uldb Host Properties}{\v HostProps} dialog box lets you specify the following:\pard
+\par \fi0\li0 \bullet   Ping intervals - check this if you want to specify intervals for this host explicitly. If you don't - this host will use parent's settings. You can't uncheck this for root node.
+    \pard
+\par \fi0\li0 \bullet   When the host is known as reachable - time to wait until next ping if the last ping succeeded.
+\par \fi0\li0 \bullet   When the host is known as unreachable - time to wait until next ping If the last ping failed.\pard
+\par \fi0\li0 \bullet   {#{\footnote timeOutHIDD_PROPS_SETTINGS}}Maximum ping reply timeout - amount of milliseconds to wait for echo reply.
+\par \fi0\li0 \bullet   {#{\footnote retriesHIDD_PROPS_SETTINGS}}Maximum retries count - number of failed pings before Big Brother considers the host is down.\pard
+\page
+
+\pard\plain\keepn
+#{\footnote HID_BROTHERS_DELETE}
+{ \f1\fs18\b\sb120 Delete}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Use this feature to remove current host and all of its children. You can't remove the root node, although you may remove all hosts but root using this command.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_BROTHERS_ADDBROTHER}
+{ \f1\fs18\b\sb120 Add new host (brother to current)}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You can add new host into your network using this menu command. New host will be a brother to current. (note: You can't add brother to the root node)
+\page
+
+\pard\plain\keepn
+#{\footnote HID_FILE_NEW}
+{ \f1\fs18\b\sb120 New}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Create the whole new network tree. This command will remove all hosts you currently have.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_FILE_OPEN}
+{ \f1\fs18\b\sb120 Open}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Open previously {\uldb saved}{\v HID_FILE_SAVE} network file.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_FILE_SAVE}
+{ \f1\fs18\b\sb120 Save}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Save your current network layout to disk file for future {\uldb retrieval}{\v HID_FILE_OPEN}
+\page
+
+\pard\plain\keepn
+#{\footnote HID_FILE_SAVE_AS}
+{ \f1\fs18\b\sb120 Save as}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Save your current network layout under different name.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_APP_EXIT}
+{ \f1\fs18\b\sb120 Exit}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Leave {\b Big Brother}. you will be prompted if you have unsaved information.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_VIEW_TOOLBAR}
+{ \f1\fs18\b\sb120 Toolbar}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Use this command to hide or show toolbar.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_VIEW_STATUS_BAR}
+{ \f1\fs18\b\sb120 Status bar}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Use this command to hide or show status bar.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_WINDOW_SPLIT}
+{ \f1\fs18\b\sb120 Adjust Splitter}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Adjust position of splitter between tree view pane and host activity pane
+\page
+
+\pard\plain\keepn
+#{\footnote HID_HELP_FINDER}
+{ \f1\fs18\b\sb120 Help Topics}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Show help topics.
+\page
+
+\pard\plain\keepn
+#{\footnote MRUFile}
+{ \f1\fs18\b\sb120 Most Recently Used Files}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 The menu commands right before the Exit allows you to quickly retrieve one of the most recently used files.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_INDICATOR_PINGBAR}
+{ \f1\fs18\b\sb120 {\b Big Brother} Activity indicator}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 {\b Big Brother} activity indicator is a small red triangle spinning and turning to black whenever Big Brother is busy pinging hosts.
+\page
+
+\pard\plain\keepn
+#{\footnote AFX_HIDW_STATUS_BAR}
+{ \f1\fs18\b\sb120 Status bar}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Sometimes you may see some useful messages in there. For instance, long descriptions of menu items whenever you are exploring the menu.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_CONTEXT_HELP}
+{ \f1\fs18\b\sb120 Context help}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Move mouse cursor with question mark wherever you want and get help for something you click on.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_SC_MAXIMIZE}
+{ \f1\fs18\b\sb120 Maximize}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 This option will maximize {\b Big Brother} window to full screen.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_SC_MOVE}
+{ \f1\fs18\b\sb120 Move}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 This option will let you move {\b Big Brother} window around the screen.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_SC_SIZE}
+{ \f1\fs18\b\sb120 Size}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 This option will let you resize {\b Big Brother}'s window
+\page
+
+\pard\plain\keepn
+#{\footnote HID_SC_RESTORE}
+{ \f1\fs18\b\sb120 Restore}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You option may use this to restore {\b Big Brother}'s window to its original size after you've maximized it.
+\page
+
+\pard\plain\keepn
+#{\footnote HID_SC_CLOSE}
+{ \f1\fs18\b\sb120 Close}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 This option does about the same as the {\uldb Exit}{\v HID_APP_EXIT} menu command does.
+\page
+
+\pard\plain\keepn
+#{\footnote Add}
+${\footnote Add new host}
+{ \f1\fs18\b\sb120 Add new host}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 You may add new hosts for monitoring in two ways - by adding it {\uldb as a child}{\v HID_BROTHERS_NEW} or {\uldb as a brother}{\v HID_BROTHERS_ADDBROTHER} to current one.
+\page
+
+\pard\plain
+#{\footnote HID_HELP_LEGEND}
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Tree view pane:\pard
+\par \fi0\li0 \bullet   \{bmct IDI_NOHOST.bmp\} Network - no particular host specified.
+\par \fi0\li0 \bullet   \{bmct IDI_PINGING.bmp\} In progress - host is being checked.
+\par \fi0\li0 \bullet   \{bmct IDI_HOST.bmp\} Reachable host - host is reachable.
+\par \fi0\li0 \bullet   \{bmct IDI_GOINGDOWN.bmp\} Worrisome host - host is dying.
+\par \fi0\li0 \bullet   \{bmct IDI_HOSTDOWN.bmp\} Unreachable host - host is unreachable.\pard
+\par\sa120\sb120\qj\pard \f1\fs18\sb120 Activity pane:\pard
+\par \fi0\li0 \bullet   \{bmct green.bmp\} Good response time
+\par \fi0\li0 \bullet   \{bmct yellow.bmp\} Average response time
+\par \fi0\li0 \bullet   \{bmct red.bmp\} Critical response time\pard
+\page
+}

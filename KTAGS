@@ -1,0 +1,12 @@
+about-date	bigbrother.rc	/LTEXT\s\+"Copyright /;"	kind:d
+about-version	bigbrother.rc	/LTEXT\s\+"Big Brother, Version/;"	kind:v
+help-license-date	./help/bigbrother.xml	/<license\s/;"	kind:d
+help-news	./help/bigbrother.xml	/<newsfor\s/
+install-version	./install/install.cpp	/^#define\s\+VERSION\s\+"/;"	kind:v
+install-vsinfo-date	install/install.rc	/^\s\+VALUE\s\+"LegalCopyright",/;"	kind:d
+install-vsinfo-numeric-version	install/install.rc	/^\s\+FILEVERSION\s\+/;"	kind:v
+install-vsinfo-string-version	install/install.rc	/^\s\+VALUE\s\+"FileVersion",/;"	kind:v
+license-date	COPYING	:1;"	kind:d
+vsinfo-date	bigbrother.rc	/VALUE\s\+"LegalCopyright",/;"	kind:d
+vsinfo-numeric-version	bigbrother.rc	/^\s\+FILEVERSION\s\+/;"	kind:v
+vsinfo-string-version	bigbrother.rc	/^\s\+VALUE\s\+"FileVersion",/;"	kind:v
