@@ -11,11 +11,11 @@
   <p>You can also hide <kin>Big Brother</kin> into your notify tray so that it won't occupy more than 16x16 square of your precious windows' desktop. Just click <image source="bbullet.bmp"/> in your notify tray or select <a href="#HID_VIEW_MAINWINDOW">View/Main Window</a> from menu. Click <image source="bbullet.bmp"/> again to restore <kin>Big Brother</kin> to its full size.</p>
   <p/>
   <p><b><i>Enjoy!</i></b></p>
-  <license years="1996, 2002"/>
+  <license years="1996-2004"/>
   <credits/>
  </topic>
  <topic id="News" title="What's New">
-  <newsfor version="1.5" date="August 19th, 2002">
+  <newsfor version="1.5" date="July 11th, 2004">
    <ni>License change and opening the source code</ni>
    <ni>Made it work with Win2k and friends</ni>
    <ni>Added kinwide installer</ni>
