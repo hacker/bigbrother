@@ -3,7 +3,7 @@
 
 #define KINSHORT "BigBro"
 #define KINNAME "Big Brother"
-#define VERSION "1.5"
+#define VERSION "1.5.1"
 
 BOOL Install(void)
 {
@@ -61,6 +61,12 @@ FILE* inf=CREATE_INF_FILE(path,KINSHORT ".INF");
 	fclose(inf);
 
 	REG_UNINSTALL_COMMAND(KINSHORT,"Klever " KINNAME " " VERSION,shortPath,KINSHORT".INF","Uninstall");
+    REG_UNINSTALL_ICON(KINSHORT,path,"bigbrother.exe",0);
+    REG_UNINSTALL_COMMENT(KINSHORT,"Klever Big brother");
+    REG_UNINSTALL_VERSION(KINSHORT,VERSION);
+    REG_UNINSTALL_LOCATION(KINSHORT,path);
+    REG_UNINSTALL_PUBLISHER(KINSHORT,"Klever Group");
+    REG_UNINSTALL_URLS(KINSHORT,"http://www.klever.net/","http://kin.klever.net/bigbrother/");
 
 	MessageBox(NULL,KINNAME" " VERSION " installed successfully, you may now run it from 'Programs/Klever Group' menu or remove it using Control Panel Add/Remove Programs applet."," Rejoice!",MB_ICONINFORMATION|MB_OK);
 
